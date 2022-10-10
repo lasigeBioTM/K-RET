@@ -20,7 +20,7 @@ The training details are described in our academic paper.
 
 Our project includes code adaption of the K-BERT model available [here](https://github.com/autoliuweijie/K-BERT).
 
-Use the [K-RET Image]() available at Docker Hub to set up the experimental environment.
+Use the [K-RET Image](https://hub.docker.com/r/dpavot/kret) available at Docker Hub to set up the experimental environment.
 
 ### Usage Example:
 
