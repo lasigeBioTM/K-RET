@@ -10,9 +10,9 @@ The [uer](/uer/) folder corresponds to an updated version of the toolkit develop
 
 Available versions of the best performing pre-trained models are as follows:
 
-* [DRUG-DRUG]()
-* [DRUG-DISEASE]()
-* [GENE-PHENOTYPE]()
+* [DRUG-DRUG](https://drive.google.com/drive/folders/1-XRHAz1IY5C1L5GMqKrKWxEnwIVfhU-d?usp=sharing)
+* [DRUG-DISEASE](https://drive.google.com/drive/folders/10fIQlKdJEJk-C4bQkB4WkNfk0gmcgKXx?usp=sharing)
+* [GENE-PHENOTYPE](https://drive.google.com/drive/folders/1GR67jrAC9jxwliPdGFvUUSolWcpvhKlO?usp=sharing)
 
 The training details are described in our academic paper.
 
