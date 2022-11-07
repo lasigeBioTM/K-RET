@@ -1,11 +1,11 @@
 import sys
 
 
-def generate_output(log_file, exposome_file, output_file):
+def generate_output(log_file, test_file, output_file):
 	"""
 
 	:param log_file:
-	:param exposome_file:
+	:param test_file:
 	:param output_file:
 	:return:
 	"""
@@ -26,12 +26,12 @@ def generate_output(log_file, exposome_file, output_file):
 			if tensor_lines:
 				break
 
-	exposome = open(exposome_file, 'r', encoding='utf-8')
-	exposome.readline()  # skip header
-	exposome_lines = exposome.readlines()
+	test = open(test_file, 'r', encoding='utf-8')
+	test.readline()  # skip header
+	test_lines = test.readlines()
 
 	dataset_lines = []
-	for line in exposome_lines:
+	for line in test_lines:
 		sentence = line.split('\t')[-1][:-1]
 		dataset_lines.append(sentence)
 
