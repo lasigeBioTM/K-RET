@@ -2,7 +2,7 @@
 
 K-RET is a flexible biomedical RE system, allowing for the use of any pre-trained BERT-based system (e.g., SciBERT and BioBERT) to inject knowledge in the form of knowledge graphs from a single source or multiple sources simultaneously. This knowledge can be applied to various contextualizing tokens or just to the tokens of the candidate relation for single and multi-token entities.
 
-Our academic paper which describes K-RET in detail can be found [here]().
+Our academic paper which describes K-RET in detail can be found [here](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btad174/7108769).
 
 The [uer](/uer/) folder corresponds to an updated version of the toolkit developed by [Zhao et al. (2019)](https://aclanthology.org/D19-3041) available [here](https://github.com/dbiir/UER-py). 
 
@@ -64,4 +64,4 @@ python3 src/process_results.py ./outputs/ddi_results.log ./datasets/ddi_corpus/t
 
 ## Reference
 
-- Diana Sousa and Francisco M. Couto. 2022. K-RET: Knowledgeable Biomedical Relation Extraction System.
+- Diana Sousa and Francisco M. Couto. 2022. K-RET: Knowledgeable Biomedical Relation Extraction System. Bioinformatics.
