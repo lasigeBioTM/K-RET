@@ -20,6 +20,15 @@ The training details are described in our academic paper.
 
 Our project includes code adaption of the K-BERT model available [here](https://github.com/autoliuweijie/K-BERT).
 
+### Get Baseline Model Example
+
+After downloading a baseline model, for instance [Scibert](https://huggingface.co/allenai/scibert_scivocab_uncased/tree/main), the model needs to be converted using the uer toolkit. For this, you can run the following example making the necessary adaptations given different baseline models or different paths. 
+
+````
+cd K-RET/uer/
+python3 convert_bert_from_huggingface_to_uer.py --input_model_path ../models/pre_trained_model_scibert/scibert_scivocab_uncased/pytorch_model.bin --output_model_path ../models/pre_trained_model_scibert/output_model.bin
+````
+
 Use the [K-RET Image](https://hub.docker.com/r/dpavot/kret) available at Docker Hub to set up the experimental environment.
 
 ### Usage Example
