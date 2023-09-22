@@ -8,7 +8,7 @@ The [uer](/uer/) folder corresponds to an updated version of the toolkit develop
 
 ## Downloading Pre-Trained Models
 
-You should use both a baseline model and one of our pre-trained models to predict new data. If you wish to train a model on your data, you only need a baseline model, which can be either model referenced in our academic paper. 
+You should use both a baseline model and one of our pre-trained models to make predictions on new data. If you wish to train a new model on your data, you only need a baseline model, which can be either model referenced in our academic paper. 
 
 ### Baseline Models
 
