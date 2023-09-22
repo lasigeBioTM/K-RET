@@ -8,11 +8,16 @@ The [uer](/uer/) folder corresponds to an updated version of the toolkit develop
 
 ## Downloading Pre-Trained Models
 
-You should use both a baseline model and one of our pre-trained models to predict new data. If you just wish to train a model on your data, you only need a baseline model, which can be either model referenced in our academic paper. 
+You should use both a baseline model and one of our pre-trained models to predict new data. If you wish to train a model on your data, you only need a baseline model, which can be either model referenced in our academic paper. 
 
 ### Baseline Models
 
-After downloading one of the referenced baseline models, for instance [Scibert](https://huggingface.co/allenai/scibert_scivocab_uncased/tree/main), the model needs to be converted using the uer toolkit. For this, you can run the following example making the necessary adaptations given different baseline models or different paths. 
+After downloading a baseline model, for instance [Scibert](https://huggingface.co/allenai/scibert_scivocab_uncased/tree/main), the model needs to be converted using the uer toolkit. For this, you can run the following example, making the necessary adaptations given different baseline models or paths. 
+
+````
+cd K-RET/uer/
+python3 convert_bert_from_huggingface_to_uer.py --input_model_path ../models/pre_trained_model_scibert/scibert_scivocab_uncased/pytorch_model.bin --output_model_path ../models/pre_trained_model_scibert/output_model.bin
+````
 
 ````
 cd K-RET/uer/
