@@ -19,11 +19,6 @@ cd K-RET/uer/
 python3 convert_bert_from_huggingface_to_uer.py --input_model_path ../models/pre_trained_model_scibert/scibert_scivocab_uncased/pytorch_model.bin --output_model_path ../models/pre_trained_model_scibert/output_model.bin
 ````
 
-````
-cd K-RET/uer/
-python3 convert_bert_from_huggingface_to_uer.py --input_model_path ../models/pre_trained_model_scibert/scibert_scivocab_uncased/pytorch_model.bin --output_model_path ../models/pre_trained_model_scibert/output_model.bin
-````
-
 ### Our Models
 
 Available versions of the best performing pre-trained models are as follows:
