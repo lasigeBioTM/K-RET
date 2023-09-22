@@ -12,7 +12,7 @@ You should use both a baseline model and one of our pre-trained models to predic
 
 ### Baseline Models
 
-After downloading a baseline model, for instance [Scibert](https://huggingface.co/allenai/scibert_scivocab_uncased/tree/main), the model needs to be converted using the uer toolkit. For this, you can run the following example, making the necessary adaptations given different baseline models or paths. 
+After downloading a baseline model, for instance [SciBERT](https://huggingface.co/allenai/scibert_scivocab_uncased/tree/main), the model needs to be converted using the uer toolkit. For this, you can run the following example, making the necessary adaptations given different baseline models or paths. 
 
 ````
 cd K-RET/uer/
