@@ -36,24 +36,13 @@ class BertClassifier(nn.Module):
         self.output_layer_2 = nn.Linear(args.hidden_size, args.labels_num)
         self.softmax = nn.LogSoftmax(dim=-1)
 
-        # FOR PGR
-        if 'pgr' in args.train_path:
-            weights = [4.89, 0.56]
+        if args.class_weights:
+            weights = args.weigths
+            class_weights = torch.FloatTensor(weights).cuda()
+            self.criterion = nn.NLLLoss(weight=class_weights)
 
-        # FOR DDI
-        elif 'ddi' in args.train_path:
-            weights = [0.234, 3.377, 4.234, 6.535, 24.613]
-
-        # FOR BC5CDR
         else:
-            weights = [0.82, 1.28]
-
-        class_weights = torch.FloatTensor(weights).cuda()
-        self.criterion = nn.NLLLoss(weight=class_weights)
-
-        # FOR OTHERS
-        # self.criterion = nn.NLLLoss()
-        # FOR OTHERS END
+            self.criterion = nn.NLLLoss()
 
         self.use_vm = False if args.no_vm else True
         print("[BertClassifier] use visible_matrix: {}".format(self.use_vm))
@@ -189,6 +178,9 @@ def main():
     parser.add_argument("--pooling", choices=["mean", "max", "first", "last"], default="first", help="Pooling type.")
     parser.add_argument("--testing", default=False, help="Do we only want to test.")
     parser.add_argument("--to_test_model", type=str, help="Name of the model to use to test.")
+    parser.add_argument("--class_weights", default=False, help="Do we want to use class weights.")
+    parser.add_argument("--weights", type=list, help="Class weights for each label.")
+
 
     # Subword options.
     parser.add_argument("--subword_type", choices=["none", "char"], default="none", help="Subword feature type.")

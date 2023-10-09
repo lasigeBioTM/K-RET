@@ -44,6 +44,8 @@ Use the [K-RET Image](https://hub.docker.com/r/dpavot/kret) available at Docker 
     --train_path ./datasets/ddi_corpus/train.tsv \
     --dev_path ./datasets/ddi_corpus/dev.tsv \
     --test_path ./datasets/ddi_corpus/test.tsv \
+    --class_weights True \
+    --weights "[0.234, 3.377, 4.234, 6.535, 24.613]" \
     --epochs_num 30 \
     --batch_size 32 \
     --kg_name "['ChEBI']" \
@@ -61,6 +63,8 @@ CUDA_VISIBLE_DEVICES='0' python3 -u run_classification.py \
     --vocab_path ./models/pre_trained_model_scibert/scibert_scivocab_uncased/vocab.txt \
     --train_path ./datasets/ddi_corpus/train.tsv \
     --dev_path ./datasets/ddi_corpus/dev.tsv \
+    --class_weights True \
+    --weights "[0.234, 3.377, 4.234, 6.535, 24.613]" \
     --test_path ./datasets/ddi_corpus/test.tsv \
     --epochs_num 30 --batch_size 32 --kg_name "[]" \
     --testing True \
