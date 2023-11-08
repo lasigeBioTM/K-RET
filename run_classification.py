@@ -179,7 +179,7 @@ def main():
     parser.add_argument("--testing", default=False, help="Do we only want to test.")
     parser.add_argument("--to_test_model", type=str, help="Name of the model to use to test.")
     parser.add_argument("--class_weights", default=False, help="Do we want to use class weights.")
-    parser.add_argument("--weights", type=list, help="Class weights for each label.")
+    parser.add_argument("--weights", help="Class weights for each label.")
 
 
     # Subword options.
