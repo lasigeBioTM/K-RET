@@ -37,7 +37,7 @@ class BertClassifier(nn.Module):
         self.softmax = nn.LogSoftmax(dim=-1)
 
         if args.class_weights:
-            weights = args.weights
+            weights = eval(args.weights)
             class_weights = torch.FloatTensor(weights).cuda()
             self.criterion = nn.NLLLoss(weight=class_weights)
 
