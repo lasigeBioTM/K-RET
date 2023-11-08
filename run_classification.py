@@ -1,6 +1,6 @@
 # -*- encoding:utf-8 -*-
 """
-  This script provides an k-BERT exmaple for classification.
+  This script provides an K-RET example for classification.
 """
 import torch.nn as nn
 import sys
