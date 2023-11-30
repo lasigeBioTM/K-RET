@@ -23,9 +23,9 @@ python3 convert_bert_from_huggingface_to_uer.py --input_model_path ../models/pre
 
 Available versions of the best performing pre-trained models are as follows:
 
-* [DRUG-DRUG](https://drive.google.com/drive/folders/1-XRHAz1IY5C1L5GMqKrKWxEnwIVfhU-d?usp=sharing)
-* [DRUG-DISEASE](https://drive.google.com/drive/folders/10fIQlKdJEJk-C4bQkB4WkNfk0gmcgKXx?usp=sharing)
-* [GENE-PHENOTYPE](https://drive.google.com/drive/folders/1GR67jrAC9jxwliPdGFvUUSolWcpvhKlO?usp=sharing)
+* [DRUG-DRUG](https://zenodo.org/records/10230389?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImVkYmRlOWZlLTRjMzktNDcyOC04NTEyLTIyNTYyZTM3NGZmZSIsImRhdGEiOnt9LCJyYW5kb20iOiJmZmJkNjg1M2ZmZjMwYWM3ODZlZTEzMTVkYzlhOTUxYSJ9.KoxOnML7DTWkiHFYiV01byaxpU_kGQOyvdNvf3BOvlsmWJkPH46GXQeYmL8vE4kO8cgemOMtjMa0onmh8u05mQ)
+* [DRUG-DISEASE](https://zenodo.org/records/10230389?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImVkYmRlOWZlLTRjMzktNDcyOC04NTEyLTIyNTYyZTM3NGZmZSIsImRhdGEiOnt9LCJyYW5kb20iOiJmZmJkNjg1M2ZmZjMwYWM3ODZlZTEzMTVkYzlhOTUxYSJ9.KoxOnML7DTWkiHFYiV01byaxpU_kGQOyvdNvf3BOvlsmWJkPH46GXQeYmL8vE4kO8cgemOMtjMa0onmh8u05mQ)
+* [GENE-PHENOTYPE](https://zenodo.org/records/10230389?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImVkYmRlOWZlLTRjMzktNDcyOC04NTEyLTIyNTYyZTM3NGZmZSIsImRhdGEiOnt9LCJyYW5kb20iOiJmZmJkNjg1M2ZmZjMwYWM3ODZlZTEzMTVkYzlhOTUxYSJ9.KoxOnML7DTWkiHFYiV01byaxpU_kGQOyvdNvf3BOvlsmWJkPH46GXQeYmL8vE4kO8cgemOMtjMa0onmh8u05mQ)
 
 The training details are described in our academic paper.
 
