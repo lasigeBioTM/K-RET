@@ -12,7 +12,6 @@ def generate_output(log_file, test_file, output_file):
 
 	log = open(log_file, 'r', encoding='utf-8')
 	lines = log.readlines()
-	lines.reverse()
 	log.close()
 
 	predictive_classes = []
