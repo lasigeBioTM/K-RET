@@ -75,7 +75,7 @@ CUDA_VISIBLE_DEVICES='0' python3 -u run_classification.py \
 #### Process Results Example
 
 ````
-python3 src/process_results.py ./outputs/ddi_results.log ./datasets/ddi_corpus/test.tsv ddi_results.tsv
+python3 auxiliar/process_results.py ./outputs/ddi_results.log ./datasets/ddi_corpus/test.tsv ddi_results.tsv
 ````
 
 ## Reference
